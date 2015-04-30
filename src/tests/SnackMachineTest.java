@@ -28,11 +28,13 @@ public class SnackMachineTest {
 	@Test
 	public void test_coffe() throws Exception {
 		System.out.println("Test coffe started");
-		Coffee coffee = new Coffee();
+		
+        Coffee coffee = new Coffee();
 
 		Assert.assertEquals(1, coffee.make());
 		Assert.assertEquals(10, coffee.make(10));
 		Assert.assertEquals(0, coffee.make(-10));
+
 		System.out.println("Test coffe finished");
 	}
 
